@@ -1,0 +1,76 @@
+<!--CS 351 Final Project - Joshua Jefson Romulo-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Joshua Jefson Romulo</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./resume.html">Link to résumé</a></li>
+        <li><a href="./blog.html">Link to Blog Page</a></li>
+      </ul>
+    </nav>
+
+    <div id="placeholder"></div>
+
+    <!--For Mobile Viewing-->
+    <script>
+      if (document.documentElement.clientWidth <= 500) {
+        let codeBlock = '<div id=flex_outer>' +
+                          '<h2>A Photo of Me </h2>' +
+                          '<img src="./photo.png" width="283" height="377">' + 
+                        '</div>';
+        document.querySelector('#placeholder').innerHTML = codeBlock;
+      }
+    </script>
+
+    <main>
+      <!--For Desktop Viewing-->
+      <aside id="second_placeholder"></aside>
+      <script>
+        if (document.documentElement.clientWidth >= 500) {
+          let codeBlock = '<h2>A Photo of Me</h2>' +
+                          '<img src="./photo.png" width="283" height="377">';
+                          
+          document.querySelector('#second_placeholder').innerHTML = codeBlock;
+        }
+      </script>
+
+      <article>
+        <h2>About me</h2>
+        <p>I am a computer science undergraduate student @ CSUEB with experience in the following languages: 
+          Python, Java, C++, HTML, CSS, JavaScript, and MIPS Assembly. I am also currently working for Cal State 
+          East Bay's Information Technology department as a part-time student assistant aiding with digital accessibility 
+          media production.</p>
+        <h2>Current Position</h2>
+        <ul>
+          <li>Information Technology Services (ITS) Accessibility Production Assistant</li>
+          <ul>
+            <li>Processing student requests for physical and electronic course materials and textbooks into Accessible Format using Assistive Technology and OCR software.</li>
+            <li>Upholding of an electronic inventory.</li>
+            <li>Providing triage services to the ICT process via campus ticketing system (Service Desk).</li>
+          </ul>
+        </ul>
+        <br>
+      </article>
+    </main>
+
+    <footer style="text-align:center">
+      <p id="button">Click any button to change the background color</p>
+      <button id="orange">Orange</button>
+      <button id="blue">Blue</button>
+      <button id="green">Green</button>
+      <button id="red">Red</button>
+      <button id="grey">Grey</button>
+    </footer>
+
+  </body>
+</html>

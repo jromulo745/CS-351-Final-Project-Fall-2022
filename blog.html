@@ -1,0 +1,49 @@
+<!--CS 351 Final Project - Joshua Jefson Romulo-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Blog (with Login)</h1>
+    </header>
+    <nav style="background-color:aquamarine">
+      <ul>
+        <li><a href="./index.html">Link to home page</a></li>
+        <li><a href="./resume.html">Link to Résumé</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <div style="margin-left: 30px">
+          <p style="text-align: center">(For this CS 351 project, the login is "User" and the password is "Pass")</p>
+          <form>
+            <label for="username"><b>Username</b></label>
+            <input id='user_input' type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="pass"><b>Password</b></label>
+            <input id='pass_input' type="password" placeholder="Enter Password" name="pass" required>
+
+            <button id="button_login" type="button">Login</button>
+          </form>
+        </div>
+      </article>
+    </main>
+
+    <footer style="text-align:center">
+      <p id="button">Click any button to change the background color</p>
+      <button id="orange">Orange</button>
+      <button id="blue">Blue</button>
+      <button id="green">Green</button>
+      <button id="red">Red</button>
+      <button id="grey">Grey</button>
+    </footer>
+
+  </body>
+</html>
